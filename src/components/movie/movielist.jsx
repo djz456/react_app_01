@@ -16,47 +16,47 @@ export default class Movielist extends React.Component {
 
     }
 
-    componentWillMount() {
-        //#region 
-        /*
-        fetch('http://api.komavideo.com/news/list').then(response=>{//http://api.komavideo.com/news/list 第一个.then拿到的是response对象
-             // console.log(response);
-            return response.json()
+//     componentWillMount() {
+//         //#region 
+//         /*
+//         fetch('http://api.komavideo.com/news/list').then(response=>{//http://api.komavideo.com/news/list 第一个.then拿到的是response对象
+//              // console.log(response);
+//             return response.json()
              
-         })
-         .then(data=>{
-            console.log(data);
+//          })
+//          .then(data=>{
+//             console.log(data);
             
              
-         })
-        */
-        //#endregion
-setTimeout(()=>{
-    this.setState({
-        isloading:false
-    },1000)
-})
-    }
+//          })
+//         */
+//         //#endregion
+// setTimeout(()=>{
+//     this.setState({
+//         isloading:false
+//     },1000)
+// })
+//     }
 
     render() {
         return (<div>
-            {this.renderlist()}
+            {/* {this.renderlist()} */}
             <h1 style={{ fontSize: '35px' }}> movelist--{this.props.match.params.type}
                 --{this.props.match.params.page}</h1>
         </div>)
     }
 
-    renderlist= ()=>{
-        if(this.isloading){
-            return <Spin tip="Loading...">
-            <Alert
-                message="正在获取电影列表"
-                description="数据正在加载中，精彩内容马上呈现..."
-                type="info"
-            />
-        </Spin>
-        }else{
-            return <h1>加载完成了</h1>
-        }
-    }
+    // renderlist= ()=>{
+    //     if(this.isloading){
+    //         return <Spin tip="Loading...">
+    //         <Alert
+    //             message="正在获取电影列表"
+    //             description="数据正在加载中，精彩内容马上呈现..."
+    //             type="info"
+    //         />
+    //     </Spin>
+    //     }else{
+    //         return <h1>加载完成了</h1>
+    //     }
+    // }
 }
