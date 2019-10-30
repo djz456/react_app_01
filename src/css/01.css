@@ -1,0 +1,21 @@
+.title{
+    color: red;
+    font-size: 26px;
+    font-weight: 200;
+    text-align: center;
+    
+}
+.cmtlist{
+    border:1px dashed #eee;
+    margin: 10px;
+    padding:10px;
+    box-shadow: 0 0 10px rgb(201, 199, 199);
+}
+.use{
+    color:lightskyblue;
+    font-size: 14px;
+}
+.content{
+    color:lightsalmon;
+    font-size: 13px;
+}
